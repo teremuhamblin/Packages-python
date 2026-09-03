@@ -2,6 +2,24 @@
 # GitHub
 - Packages
    - Package Python minimal pour démontrer la publication automatique via GitHub Actions.
+ 
+### 🗂️ Structure de base du projet
+```text
+Packages-python/
+│
+├── src/
+│   └── packages_python/
+│       ├── init.py
+│       └── core.py
+│
+├── tests/
+│   └── test_core.py
+│
+├── .gitignore
+├── LICENSE
+├── pyproject.toml
+└── README.md
+```
 
 ### 🚀 Installation
 ```bash

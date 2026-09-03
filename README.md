@@ -6,6 +6,10 @@
 ### 🗂️ Structure de base du projet
 ```text
 Packages-python/
+├── .github
+│   ├── 
+│   └── workflows/
+│       ├── 
 │
 ├── src/
 │   ├── README.md 

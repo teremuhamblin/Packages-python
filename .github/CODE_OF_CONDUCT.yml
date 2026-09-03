@@ -1,0 +1,25 @@
+# Code de conduite du projet Packages-python
+
+version: "1.0"
+
+expectations:
+  - Respect mutuel entre contributeurs
+  - Communication claire et professionnelle
+  - Aucune discrimination ou comportement hostile
+  - Collaboration ouverte et constructive
+
+unacceptable_behavior:
+  - Harcèlement
+  - Spam ou contenu non pertinent
+  - Attaques personnelles
+  - Diffusion d'informations sensibles
+
+reporting:
+  contact: "ouvrir une issue avec le tag 'conduct'"
+  confidentiality: "Les signalements sont traités avec discrétion."
+
+enforcement:
+  actions:
+    - Avertissement
+    - Suspension temporaire
+    - Bannissement du projet

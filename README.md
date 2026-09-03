@@ -6,8 +6,14 @@
 ### 🗂️ Structure de base du projet
 ```text
 Packages-python/
-├── .github
-│   ├── 
+├── .github/
+│   ├── FUNDING.yml
+│   ├── CODEOWNERS
+│   ├── CODE_OF_CONDUCT.yml
+│   ├── CONTRIBUTING.yml
+│   ├── SECURITY.yml
+│   ├── ISSUE_TEMPLATE.yml
+│   ├── PULL_REQUEST_TEMPLATE.yml
 │   └── workflows/
 │       ├── 
 │

@@ -1,0 +1,38 @@
+name: Publish Packages-python
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 🔧 Installation des outils de build
+        run: |
+          pip install build
+          pip install twine
+          pip install pytest
+
+      - name: 🧪 Exécution des tests
+        run: pytest -q
+
+      - name: 🏗️ Build du package
+        run: python -m build
+
+      - name: 🚀 Publication sur GitHub Packages
+        env:
+          TWINE_USERNAME: ${{ secrets.GITHUB_ACTOR }}
+          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          twine upload --repository-url https://upload.pypi.org/legacy/ dist/*

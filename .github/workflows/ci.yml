@@ -1,0 +1,41 @@
+name: CI - Packages-python
+
+on:
+  push:
+    branches: ["main", "dev"]
+  pull_request:
+    branches: ["main", "dev"]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📦 Checkout du dépôt
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 🔧 Installation des dépendances
+        run: |
+          pip install --upgrade pip
+          pip install build
+          pip install pytest
+          pip install flake8
+
+      - name: 🧪 Tests unitaires
+        run: pytest -q
+
+      - name: 🧹 Linting (flake8)
+        run: flake8 src/ --count --select=E,F,W --show-source --statistics
+
+      - name: 🏗️ Build du package
+        run: python -m build
+
+      - name: 📁 Vérification du package
+        run: |
+          echo "Contenu du dossier dist/"
+          ls -l dist/

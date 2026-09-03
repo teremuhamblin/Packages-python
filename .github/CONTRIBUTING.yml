@@ -1,0 +1,18 @@
+# Guide de contribution pour Packages-python
+
+workflow:
+  - Fork du dépôt
+  - Création d'une branche dédiée
+  - Commits clairs et structurés
+  - Pull Request propre et documentée
+
+rules:
+  - Respecter la structure du projet
+  - Ajouter des tests si nécessaire
+  - Mettre à jour la documentation
+  - Utiliser un style Python cohérent (PEP8)
+
+git:
+  branches:
+    - main: stable
+    - dev: développement

@@ -1,0 +1,29 @@
+name: "📦 Issue — Packages-python"
+description: "Créer un ticket pour bug, feature ou documentation"
+labels: ["triage"]
+
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Type d'issue"
+      options:
+        - Bug
+        - Feature
+        - Documentation
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      placeholder: "Décris le problème ou la demande"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Étapes pour reproduire (si bug)"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Informations supplémentaires"

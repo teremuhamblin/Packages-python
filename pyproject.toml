@@ -1,0 +1,18 @@
+[project]
+name = "packages-python"
+version = "0.1.0"
+description = "Package Python simple pour démonstration GitHub Packages"
+authors = [
+    { name="Teremu", email="contact@example.com" }
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

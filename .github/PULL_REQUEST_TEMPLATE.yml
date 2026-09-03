@@ -1,0 +1,29 @@
+# Template de Pull Request — Packages-python
+
+title: "PR: "
+labels: ["review"]
+
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: "🎯 Objectif"
+      placeholder: "Explique ce que cette PR apporte"
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: "🧩 Changements"
+      placeholder: "- Ajout de...\n- Correction de..."
+
+  - type: textarea
+    id: tests
+    attributes:
+      label: "🧪 Tests"
+      placeholder: "- Tests manuels\n- Tests automatiques"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "📎 Notes"
+      placeholder: "Informations supplémentaires"

@@ -15,7 +15,8 @@ Packages-python/
 │   ├── ISSUE_TEMPLATE.yml
 │   ├── PULL_REQUEST_TEMPLATE.yml
 │   └── workflows/
-│       ├── 
+│       ├── publish.yml
+│       ├── ci.yml
 │
 ├── src/
 │   ├── README.md 

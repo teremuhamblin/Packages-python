@@ -8,11 +8,13 @@
 Packages-python/
 │
 ├── src/
+│   ├── README.md 
 │   └── packages_python/
 │       ├── init.py
 │       └── core.py
 │
 ├── tests/
+│   ├── README.md 
 │   └── test_core.py
 │
 ├── .gitignore

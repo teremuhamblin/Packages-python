@@ -1,0 +1,15 @@
+# Politique de sécurité pour Packages-python
+
+reporting:
+  method: "ouvrir une issue avec le tag 'security'"
+  confidentiality: "Les vulnérabilités sont traitées de manière privée."
+
+commitment:
+  - Analyse régulière du code
+  - Corrections rapides
+  - Dépendances surveillées
+
+scope:
+  - Code Python
+  - Scripts associés
+  - Workflows GitHub Actions

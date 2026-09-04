@@ -1,4 +1,7 @@
 ###### README.md >> markdown 
+
+[![CI](https://github.com/teremuhamblin/Packages-python/actions/workflows/ci.yml/badge.svg)](https://github.com/teremuhamblin/Packages-python/actions/workflows/ci.yml)
+
 **Packages Python**
    - Package Python minimal pour démontrer la publication automatique via GitHub Actions.
  

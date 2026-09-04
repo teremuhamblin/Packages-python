@@ -1,27 +1,7 @@
 ###### README.md >> markdown 
-# GitHub
-
-Python version 3.10 alpha 0
-=====================================
-
-.. image:: https://github.com/python/cpython/actions/workflows/build.yml/badge.svg?branch=main&event=push
-   :alt: CPython build status on GitHub Actions
-   :target: https://github.com/python/cpython/actions
-
-.. image:: https://dev.azure.com/python/cpython/_apis/build/status/Azure%20Pipelines%20CI?branchName=main
-   :alt: CPython build status on Azure DevOps
-   :target: https://dev.azure.com/python/cpython/_build/latest?definitionId=4&branchName=main
-
-.. image:: https://img.shields.io/badge/discourse-join_chat-brightgreen.svg
-   :alt: Python Discourse chat
-   :target: https://discuss.python.org/
-
-
-Copyright © 2001 Python Software Foundation.  All rights reserved.
-
-See the end of this file for further copyright and license information.
-
-- Packages
+# Packages
+> **PYTHON**
+=======================================- Packages
    - Package Python minimal pour démontrer la publication automatique via GitHub Actions.
  
 ### 🗂️ Structure de base du projet

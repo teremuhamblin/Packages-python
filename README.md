@@ -1,5 +1,4 @@
 ###### README.md >> markdown 
-
 [![CI](https://github.com/teremuhamblin/Packages-python/actions/workflows/ci.yml/badge.svg)](https://github.com/teremuhamblin/Packages-python/actions/workflows/ci.yml)
 
 **Packages Python**
@@ -59,6 +58,7 @@ src/packages_python/
 ---
 
 ### 🛡️ Sections pour documenter
+![Version](https://img.shields.io/badge/version-0.1.0-blue)
 #### 📦 MANIFEST.in
 Le fichier MANIFEST.in contrôle les fichiers inclus dans la distribution Python.  
 Dans ce projet, il permet :
@@ -68,11 +68,9 @@ Dans ce projet, il permet :
 
 >Cela garantit que le package publié sur GitHub Packages contient tout ce qui est nécessaire.
 
----
-
 ### 📝 CHANGELOG.md
->Le fichier CHANGELOG.md documente l’évolution du projet.  
-Il suit une structure simple :
+- Le fichier CHANGELOG.md documente l’évolution du projet.  
+- Il suit une structure simple :
    - Ajouté : nouvelles fonctionnalités  
    - Fixé : corrections  
    - Notes : informations diverses  
@@ -82,7 +80,7 @@ Il suit une structure simple :
 ---
 
 ### 🔒 .gitignore
->Le .gitignore est optimisé pour :
+- Le .gitignore est optimisé pour :
    - Python  
    - Build (dist/, build/)  
    - Environnements virtuels  
@@ -95,6 +93,7 @@ Il suit une structure simple :
 ---
 
 ### ⚙️ Packaging
+![Python](https://img.shields.io/badge/python-3.10_|_3.11_|_3.12-blue.svg)
 - (setup.cfg + setup.py)
 Le projet utilise :
    - setup.cfg pour la configuration du package  
@@ -115,6 +114,7 @@ Ce modèle est compatible :
 ---
 
 ### 🧩 Utilisation
+
 ```python
 from packages_python import add
 print(add(2, 3))  # 5

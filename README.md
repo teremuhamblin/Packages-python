@@ -1,7 +1,5 @@
 ###### README.md >> markdown 
-# Packages
-> **PYTHON**
-=======================================- Packages
+**Packages Python**
    - Package Python minimal pour démontrer la publication automatique via GitHub Actions.
  
 ### 🗂️ Structure de base du projet

@@ -1,0 +1,13 @@
+include README.md
+include CHANGELOG.md
+include LICENSE
+
+recursive-include src/packages_python *.py
+recursive-include src/packages_python *.txt
+recursive-include src/packages_python *.md
+recursive-include src/packages_python *.json
+recursive-include src/packages_python *.cfg
+recursive-include src/packages_python *.ini
+
+global-exclude *.pyc
+global-exclude __pycache__

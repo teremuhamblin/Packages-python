@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packages-python"
+version = "0.1.0"
+description = "Packages Delivery - Python core"
+authors = [
+    { name = "Major Hamblin" }
+]
+requires-python = ">=3.10"
+
+# IMPORTANT : ton package est dans src/
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+# IMPORTANT : Setuptools doit détecter ton package
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["packages_python*"]
+
+# Optionnel mais conseillé
+[tool.setuptools.package-data]
+packages_python = ["*"]

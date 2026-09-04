@@ -34,7 +34,8 @@ Packages-python/
 │
 ├── .gitignore
 ├── LICENSE
-├── pyproject.toml
+├── setup.py
+├── setup.cfg
 └── README.md
 ```
 

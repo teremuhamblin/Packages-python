@@ -33,9 +33,11 @@ Packages-python/
 │   └── test_core.py
 │
 ├── .gitignore
+├── MANIFEST.in
 ├── LICENSE
 ├── setup.py
 ├── setup.cfg
+├── CHANGELOG.md
 └── README.md
 ```
 
@@ -44,10 +46,77 @@ Packages-python/
 pip install packages-python
 ```
 
+>Calibrer pour ton projet Packages Delivery / Packages-python, layout :
+```md
+setup.cfg
+setup.py
+MANIFEST.in
+CHANGELOG.md
+.gitignore
+src/packages_python/
+```
+
+---
+
+### 🛡️ Sections pour documenter
+#### 📦 MANIFEST.in
+Le fichier MANIFEST.in contrôle les fichiers inclus dans la distribution Python.  
+Dans ce projet, il permet :
+   - d’inclure la documentation (README.md, CHANGELOG.md, LICENSE)
+   - d’inclure tous les fichiers utiles du package packages_python
+   - d’exclure les fichiers inutiles (pycache, .pyc)
+
+>Cela garantit que le package publié sur GitHub Packages contient tout ce qui est nécessaire.
+
+---
+
+### 📝 CHANGELOG.md
+>Le fichier CHANGELOG.md documente l’évolution du projet.  
+Il suit une structure simple :
+   - Ajouté : nouvelles fonctionnalités  
+   - Fixé : corrections  
+   - Notes : informations diverses  
+
+- La version actuelle : ***0.1.0 — Initial Release***
+
+---
+
+### 🔒 .gitignore
+>Le .gitignore est optimisé pour :
+   - Python  
+   - Build (dist/, build/)  
+   - Environnements virtuels  
+   - IDE (VSCode, PyCharm)  
+   - GitHub Actions  
+   - Fichiers système  
+
+>Il protège ton dépôt contre les fichiers inutiles ou sensibles.
+
+---
+
+### ⚙️ Packaging
+- (setup.cfg + setup.py)
+Le projet utilise :
+   - setup.cfg pour la configuration du package  
+   - setup.py minimal pour permettre le build  
+   - MANIFEST.in pour contrôler les fichiers inclus  
+
+Le layout est :
+```text
+src/packages_python/
+```
+
+Ce modèle est compatible :
+- python -m build
+- pip install .
+- GitHub Actions CI
+- Publication GitHub Packages
+
+---
+
 ### 🧩 Utilisation
 ```python
 from packages_python import add
-
 print(add(2, 3))  # 5
 ```
 

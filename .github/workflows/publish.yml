@@ -1,4 +1,4 @@
-name: Publish Packages-python
+name: Publish
 
 on:
   push:
@@ -6,33 +6,33 @@ on:
       - "v*.*.*"
 
 jobs:
-  build-and-publish:
+  publish:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+      packages: write
+
     steps:
-      - name: 📦 Checkout du dépôt
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: 🐍 Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 🔧 Installation des outils de build
+      - name: Install build tools
         run: |
+          python -m pip install --upgrade pip
           pip install build
-          pip install twine
-          pip install pytest
 
-      - name: 🧪 Exécution des tests
-        run: pytest -q
-
-      - name: 🏗️ Build du package
+      - name: Build package
         run: python -m build
 
-      - name: 🚀 Publication sur GitHub Packages
-        env:
-          TWINE_USERNAME: ${{ secrets.GITHUB_ACTOR }}
-          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+      - name: Publish to GitHub Packages
+        uses: pypa/gh-action-pypi-publish@v1.8.10
+        with:
+          user: __token__
+          password: ${{ secrets.GITHUB_TOKEN }}
+          repository_url: https://upload.pypi.org/legacy/
